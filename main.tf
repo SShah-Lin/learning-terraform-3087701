@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = ">= 3.0.0" # Use the version that matches your code
+    }
+  }
+}
+
 data "aws_ami" "app_ami" {
   most_recent = true
 
